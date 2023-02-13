@@ -17,7 +17,7 @@ def start(message: telebot.types.Message):
 
 @bot.message_handler(commands=['help',])
 def start(message: telebot.types.Message):
-    text = ' Чтобы начать работу введите комманду боту в следующем формате:\n \
+    text = ' Чтобы начать работу введите команду боту в следующем формате:\n \
  <имя валюты, цену которой он хочет узнать> <имя валюты, в которой надо узнать цену первой валюты> <количество первой валюты> \
 \n Увидеть список всех доступных валют: /values'
     bot.send_message(message.chat.id, text)
